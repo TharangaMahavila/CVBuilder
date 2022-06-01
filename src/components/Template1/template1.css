@@ -1,0 +1,194 @@
+ .background{ 
+    background-image: url("http://www.dotrex.co/vertica/themes/img/bg-james3.jpg");
+     width: 100%;
+} 
+
+.resume-container {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.header-buttons {
+    text-align: right;
+    padding-top: 15px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-default {
+    background: #031634;
+    border: #031634;
+    height: 30px;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.profile-intro {
+    margin-top: 50px;
+    background-color: #031634;
+}
+
+.profile{
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 1px;
+}
+
+.profile-pic {
+    border: 5px solid #09afad;
+    text-align: center;
+    border-radius: 100%;
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    background: white;
+}
+
+.about {
+    background-color: darkseagreen;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.intro-title1 {
+    background-color:khaki;
+    border-bottom: 1px solid #09afad;
+    font-size: 36px;
+    letter-spacing: -1pt;
+    border-bottom: 1px solid #249991;
+    padding-bottom: 10px;
+    font-weight: 200;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.intro-title1-name{
+    font-weight: bold;
+    color: #09afad;
+}
+
+.intro-title2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #555555;
+}
+
+.intro-des {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.profile-intro p {
+    font-size: 16px;
+    text-align: center;
+    color: #333333;
+}
+
+.info-wrap {
+    background-color: #09afad;
+}
+section{
+    background-color: white;
+}
+
+.wrapper {
+    margin-left: 15px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    color: #000523;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+
+.line-content {
+    color: #333333;
+    font-size: 16px;
+    /* opacity: 1; */
+}
+
+.section-item-title-1 {
+    color: #3b658a;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 14px;
+    color: #031634;
+}
+
+.line-content p {
+    font-size: 14px;
+    color: #333333;
+    display: block;
+}
+
+.graduation-time .job{
+    font-size: 14px;
+    font-weight: 700;
+    color: #777777;
+}
+
+.graduation-date, .job-date{
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.graduation-description, .job-description {
+    font-size: 13px;
+}
+
+.skills-list {
+    list-style: none;
+}
+
+.progress {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.progress-type {
+    position: absolute;
+    left: 0;
+    font-size: 13px;
+    padding: 3px 30px 2px 10px;
+    color: #fff;
+    background-color: rgba(25,25,25,.2);
+}
+
+.contact-infos {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.contact-subtitle-1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #031634;
+    /* color: #3b658a; */
+    font-size: 18px;
+    margin-bottom: 4px;
+    margin-top: 20px;
+}
+
+.bottom{
+    height: 50px;
+}
+
+/* @media screen and (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+} */

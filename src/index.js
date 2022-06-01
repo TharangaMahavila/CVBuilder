@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import TemplateOne from './components/Template1/template1';
+import TemplateTwo from './components/Template2/template2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter> 
+      <TemplateOne dummyData={true}/>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
