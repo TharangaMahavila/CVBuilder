@@ -7,6 +7,7 @@ import { FaDownload,FaFacebookF,FaTwitter,FaLinkedinIn,FaUniversity,FaFlag } fro
 import "./template1.css"
 import Form from "../Form";
 
+
 const TemplateOne = ({dummyData=false}) => {
 
     const [name, setName] = useState('');
@@ -123,7 +124,7 @@ const TemplateOne = ({dummyData=false}) => {
         <div className="background">
                <div className="resume-container">
                     <div className="header-buttons">
-                        <button className="btn-default">
+                        <button className="btn-default" onClick={()=> alert('This function has not been developed yet')}>
                         <a href="#">
                             <FaDownload/>
                         {/* <i className="fas fa-download"></i> */}
@@ -134,12 +135,12 @@ const TemplateOne = ({dummyData=false}) => {
                     <div className="profile-intro">
                         <div className="profile">
                             <div className="profile-pic">
-                                <img src="	http://www.dotrex.co/vertica/themes/img/avatar-James.jpg" alt="" /> 
+                                <img src={require('../../images/tharanga.jpeg')} alt="" />
                             </div>
                             <div className="about">
-                                <h1 className="intro-title1">Hi, i'm <span className="intro-title1-name">James Rex!</span></h1>
-                                <h2 class="intro-title2">Web Developer</h2>
-                                <p className="intro-des"><strong>Turpis, sit amet iaculis dui consectetur at.</strong> Cras sagittis molestie orci. <strong>Suspendisse ut laoreet mi</strong>. Phasellus eu tortor vehicula, blandit enim eu, auctor massa. Nulla ultricies tortor dolor, sit amet suscipit enim <strong>condimentum id</strong>. Etiam eget iaculis tellus.  Varius sit amet.</p>
+                                <h1 className="intro-title1">Hi, i'm <span className="intro-title1-name">Tharanga Mahavila!</span></h1>
+                                <h2 class="intro-title2">Software Engineer</h2>
+                                <p className="intro-des">I am an experienced software engineer seeking a full-time position in the field of computer programming, where I can apply my knowledge and skills for continuous improvement.</p>
                             </div>
                         </div>
                     </div>
@@ -187,20 +188,6 @@ const TemplateOne = ({dummyData=false}) => {
                                 <div className="graduation-description">
                                 <p> {dummyData? 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.': eduDescription}</p>
                                 </div>
-                                </div> 
-                                <div className="line-content">
-                                <h3 className="section-item-title-1">GRAPHIC DESIGN</h3>
-                                <h4 className="graduation-time"><FaUniversity/> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-                                <div className="graduation-description">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                                </div> 
-                                <div className="line-content">
-                                <h3 className="section-item-title-1">GRAPHIC DESIGN</h3>
-                                <h4 className="graduation-time"><FaUniversity/> St. Patrick University (2 Years Course) - <span class="graduation-date">Graduation May 2013</span></h4>
-                                <div className="graduation-description">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
                                 </div>   
                             </div>
                         </section>
@@ -214,20 +201,6 @@ const TemplateOne = ({dummyData=false}) => {
                                 <h4 className="job"><FaFlag/>{dummyData?'Web Designer -': jobRole+ ' -'} <span class="job-date"> {dummyData? 'June 2012 - Current': jobDuration}</span></h4>
                                 <div className="job-description">
                                     <p>{dummyData? 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.': jobDescription}</p>
-                                </div>
-                                </div>
-                                <div className="line-content">
-                                <h3 className="section-item-title-1">Oasis Ltda.</h3>
-                                <h4 className="job"><FaFlag/>  Front-end Developer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
-                                <div className="job-description">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                                </div>
-                                <div className="line-content">
-                                <h3 className="section-item-title-1">Oasis Ltda.</h3>
-                                <h4 className="job"><FaFlag/>  Front-end Developer - <span class="job-date">Jan 2010 - Apr 2012</span></h4>
-                                <div className="job-description">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 </div>
                                 </div>
                             </div>
@@ -275,14 +248,14 @@ const TemplateOne = ({dummyData=false}) => {
                                     </li>
                                     <li>
                                         <div className="progress">
-                                        <span className="progress-type">Adobe Illustrator</span>
+                                        <span className="progress-type">Java</span>
                                         {/* <span class="progress-completed">70%</span> */}
                                             <ProgressBar completed="60"/>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="progress">
-                                        <span className="progress-type">Adobe Fireworks</span>
+                                        <span className="progress-type">Spring boot</span>
                                         {/* <span class="progress-completed">70%</span> */}
                                             <ProgressBar completed="40"/>
                                         </div>
@@ -308,7 +281,7 @@ const TemplateOne = ({dummyData=false}) => {
                                     </li>
                                     <li>
                                         <div className="progress">
-                                        <span className="progress-type">PHP</span>
+                                        <span className="progress-type">React js</span>
                                         {/* <span class="progress-completed">70%</span> */}
                                             <ProgressBar completed="40"/>
                                         </div>
@@ -326,18 +299,6 @@ const TemplateOne = ({dummyData=false}) => {
                                 <h3 className="section-item-title-1">{dummyData? 'Art': interest}</h3>
                                 <div className="job-description">
                                     <p>{dummyData? 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.': intDescription}</p>
-                                </div>
-                                </div>
-                                <div className="line-content">
-                                <h3 className="section-item-title-1">Games</h3>
-                                <div className="job-description">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                                </div>
-                                <div className="line-content">
-                                <h3 className="section-item-title-1">Books</h3>
-                                <div className="job-description">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                 </div>
                                 </div>
                             </div>
