@@ -30,7 +30,7 @@ const TemplateTwo = ({dummyData=false}) => {
                             <div className="profile">
                                 <div className="profile-pic">
                                     <div className="profile-border">
-                                        <img src="	http://www.dotrex.co/vertica/themes/img/avatar-James.jpg" alt="" />
+                                        {/* <img src="	http://www.dotrex.co/vertica/themes/img/avatar-James.jpg" alt="" /> */}
                                     </div>
                                 </div>
                                 <div className="about">
@@ -45,7 +45,7 @@ const TemplateTwo = ({dummyData=false}) => {
                                 <section className="timeline profile-infos">
                                     <div className="content-wrap">
                                         <div className="timeline-space">
-                                            <div className="wrapper">
+                                            <div className="timeline-progress">
                                                 <div className="title-content">
                                                 <h2 class="section-title">Profile</h2>
                                                 </div>
@@ -82,7 +82,7 @@ const TemplateTwo = ({dummyData=false}) => {
                                 <section className="timeline education">
                                 <div className="content-wrap">
                                     <div className="timeline-space">
-                                        <div className="wrapper">
+                                        <div className="timeline-progress">
                                             <div className="title-content">
                                                 <h2 class="section-title">Education</h2>
                                             </div>
@@ -114,7 +114,7 @@ const TemplateTwo = ({dummyData=false}) => {
                                 <section className="timeline work-experience">
                                     <div className="content-wrap">
                                         <div className="timeline-space">
-                                            <div className="wrapper">
+                                            <div className="timeline-progress">
                                                 <div className="title-content">
                                                 <h2 class="section-title">Work Experience</h2> 
                                                 </div>
@@ -146,7 +146,7 @@ const TemplateTwo = ({dummyData=false}) => {
                                 <section className="timeline skills">
                                     <div className="content-wrap">
                                         <div className="timeline-space">
-                                            <div className="wrapper">
+                                            <div className="timeline-progress">
                                                 <div className="title-content">
                                                 <h2 class="section-title">Skills</h2>
                                                 </div>
@@ -235,7 +235,7 @@ const TemplateTwo = ({dummyData=false}) => {
                                 <section className="timeline work-experience">
                                     <div className="content-wrap">
                                         <div className="timeline-space">
-                                            <div className="wrapper">
+                                            <div className="timeline-progress">
                                                 <div className="title-content">
                                                 <h2 class="section-title">Interests</h2> 
                                                 </div>
@@ -264,7 +264,7 @@ const TemplateTwo = ({dummyData=false}) => {
                                 <section className="contact">
                                     <div className="content-wrap">
                                         <div className="timeline-space">
-                                            <div className="wrapper">
+                                            <div className="timeline-progress">
                                             <div className="title-content">
                                                 <h2 class="section-title">Contact</h2> 
                                             </div>

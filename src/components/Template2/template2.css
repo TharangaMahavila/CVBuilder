@@ -162,7 +162,7 @@ a {
 }
 
 .wrapper {
-    background: url("http://www.dotrex.co/vertica/themes/img/progress-bar.png") repeat-y center;
+    /* background: url("http://www.dotrex.co/vertica/themes/img/progress-bar.png") repeat-y center; */
     background-size: 400px 9px;
     margin-left: 15px;
 }

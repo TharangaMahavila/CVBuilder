@@ -5,13 +5,24 @@ import Button from 'react-bootstrap/Button'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { FaDownload,FaFacebookF,FaTwitter,FaLinkedinIn,FaUniversity,FaFlag } from "react-icons/fa";
 import "./template1.css"
+import Form from "../Form";
 
 const TemplateOne = ({dummyData=false}) => {
 
     const [name, setName] = useState('');
+    const [birthDay, setBirthDay] = useState('');
+    const [address, setAddress] = useState('');
 
-    const setNameValue = (event)=> {
-        setName(event.target.value);
+    const bindName = (name) => {
+        setName(name);
+    }
+
+    const bindBirthDay =(birthDay) => {
+        setBirthDay(birthDay)
+    }
+
+    const bindAdress = (address) =>{
+        setAddress(address)
     }
     return ( 
         <div className="background">
@@ -45,12 +56,12 @@ const TemplateOne = ({dummyData=false}) => {
                                 </div>
                                 <div className="line-content">
                                     <h3 className="section-item-title-1">Full Name</h3>
-                                    {!dummyData && <input placeholder="Enter your name" onChange={(e)=> setNameValue(e)}/>}
+                                    {/* {!dummyData && <input placeholder="Enter your name" onChange={(e)=> setNameValue(e)}/>} */}
                                     <p>{dummyData ? 'James Willians Rex' : name}</p>
                                 </div>
                                 <div className="line-content">
                                     <h3 className="section-item-title-1">Born</h3>
-                                    <p>30 Aug 1991 - Austin, U.S.A</p>
+                                    <p>{dummyData ? '30 Aug 1991 - Austin, U.S.A': birthDay}</p>
                                 </div>
                                 <div className="line-content">
                                     <h3 className="section-item-title-1">Email</h3>
@@ -244,7 +255,7 @@ const TemplateOne = ({dummyData=false}) => {
                                 <div className="line-content">
                                     <div className="contact-infos">
                                     <h4 className="contact-subtitle-1">Address</h4>
-                                    <p>451 Lorem Ipsum, Austin - Texas - U.S.A</p>
+                                    <p>{dummyData? '451 Lorem Ipsum, Austin - Texas - U.S.A' : address}</p>
                                     <h4 className="contact-subtitle-1">Phone</h4>
                                     <p>+61 3 8376 6284</p>
                                     <h4 className="contact-subtitle-1">Mail</h4>
@@ -253,7 +264,14 @@ const TemplateOne = ({dummyData=false}) => {
                                 </div>
                             </div>
                         </section> 
-                        <div className="bottom"></div> 
+                        <div className="bottom">
+                        </div> 
+                        <div>
+                            <Form setName={(e)=> bindName(e)} 
+                            setBirthDay={(e)=> bindBirthDay(e)}
+                            setAddress = {(e) => bindAdress(e)}
+                            />
+                        </div>
                     </div>
                 </div>
         </div>

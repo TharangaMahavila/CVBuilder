@@ -6,12 +6,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import TemplateOne from './components/Template1/template1';
 import TemplateTwo from './components/Template2/template2';
+import Form from './components/Form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter> 
-      <TemplateOne dummyData={true}/>
+      <TemplateOne dummyData={false}/>
+      {/* <Form/> */}
     </BrowserRouter>
   </React.StrictMode>
 );
